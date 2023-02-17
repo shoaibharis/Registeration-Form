@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      body {
+  background-color: #F0EBF8;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 2em;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+p {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 0.9em;
+}
+
+.card {
+  background-color: #fff;
+  width: 50vw;
+  border-radius: 12px 12px 12px;
+  border: 1px;
+  border-top: 8px solid #673AB7;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  text-align: justify;
+
+}
+
+.input-card {
+  background-color: #fff;
+  width: 50vw;
+  border-radius: 12px 12px 12px;
+  border: 1px;
+}
+
+.input-card p {
+  padding-left: 1vw;
+
+
+}
+
+.input-container {
+  padding-left: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 6vw;
+
+}
+
+.name {
+  border-top: none;
+  border-color: lightgrey;
+  border-left: none;
+  border-right: none;
+  width: 30vw;
+}
+
+.input-card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+
+}
+
+.button-class {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+
+}
+
+.submit-button {
+  border-radius: 2px 2px 2px;
+  background-color: #673AB7;
+  border: 1px solid #673AB7;
+  border-radius: 4px 4px 4px;
+  color: #fff;
+  margin-right: 39vw;
+  width: 5vw;
+  height: 5vh;
+  cursor: pointer;
+
+}
+
+.clear-button {
+  border: none;
+  color: #673AB7;
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <section class="card-container">
+      <div class="card">
+        <h1>Idea Registration at Business Incubation Centre of NUML (BICON)</h1>
+        <p>
+          To register in the Current cohot-7 of BICON (One Idea from one team of
+          2-5 persons)<br />
+          In this Physical Cohort-7, students from main campus can apply with a
+          Business Idea
+        </p>
+        <hr />
+
+        <div style="display: flex">
+          <div >
+            <img src="/eyeoff.svg" style=" margin-top: 1vw;margin-left: 2vw;width: 2vw;" alt="" />
+          </div>
+          <div>
+            <p>Email</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <form action="/bicon/register" method="post">
+      <section class="input-card-container">
+        <div class="input-card">
+          <p>Brief Title of Your Idea (Short Name)*</p>
+          <div class="input-container">
+            <input
+              class="name"
+              type="text"
+              name="title"
+              placeholder="Your Answer"
+              id="title"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <section class="input-card-container">
+        <div class="input-card">
+          <p>
+            Team Members (Provide Full Name, Department, Degree, Semester,
+            Section, Cell#, Email ID of each member)*
+          </p>
+          <div class="input-container">
+            <input
+              class="name"
+              type="text"
+              name="memberDetails"
+              placeholder="Your Answer"
+              id="teamMembers"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <section class="input-card-container">
+        <div class="input-card">
+          <p>
+            Business Idea Description (Write about main points for problem, its
+            solution and benefits) (~250 Words)*
+          </p>
+          <div class="input-container">
+            <input
+              class="name"
+              type="text"
+              name="description"
+              placeholder="Your Answer"
+              id="idea"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <section class="input-card-container">
+        <div class="input-card">
+          <p>Cell Number (WhatsApp) of one Key Person for Messaging*</p>
+          <div class="input-container">
+            <input
+              class="name"
+              type="text"
+              name="leaderCell"
+              placeholder="Your Answer"
+              id="cell"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="input-card-container">
+        <div class="input-card">
+          <p>
+            Email ID of one responsible Person for receiving activity details
+            from BICON *
+          </p>
+          <div class="input-container">
+            <input
+              class="name"
+              type="text"
+              name="leaderMail"
+              placeholder="Your Answer"
+              id="name"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <section class="input-card-container">
+        <div class="input-card">
+          <p>Comments / Suggestions</p>
+          <div class="input-container">
+            <input
+              class="name"
+              type="text"
+              name="comments"
+              placeholder="Your Answer"
+              id="comments"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <div class="button-class">
+        <div>
+          <input
+            type="submit"
+            value="Submit"
+            name="submit-button"
+            class="submit-button"
+            id="submit"
+            required
+          />
+        </div>
+        <div>
+          <input
+          type="reset"
+            value="Clear Form"
+            name="clear-button"
+            class="clear-button"
+            id=""
+            required
+          >
+          
+          </button>
+        </div>
+      </div>
+
+    </form>
+   
+  </body>
+</html>
